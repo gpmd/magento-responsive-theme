@@ -11,6 +11,8 @@ Get it now!
 
 Clone the repo, `git clone git@github.com:gpmd/magento-responsive-theme.git`, or [download the latest release](https://github.com/gpmd/magento-responsive-theme/zipball/master).
 
+Alternatively you can [download the theme as a Magento package](https://github.com/gpmd/magento-responsive-theme/blob/master/var/connect/GPMD_Responsive_Theme-0.1.3.tgz), although this may not be the most up-to-date version.
+
 
 Screen shots
 ------------
