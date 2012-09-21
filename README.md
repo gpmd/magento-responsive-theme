@@ -43,8 +43,8 @@ Changelog
 - Created initial git repo.
 
 
-Author
-------
+Authors
+-------
 
 **GPMD**
 
