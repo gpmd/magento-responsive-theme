@@ -25,6 +25,12 @@ Screen shots
 We don't yet have a live demo available, but in the meantime you can [view some screen grabs here](http://gpmd.github.com/magento-responsive-theme/).
 
 
+Instructions
+------------
+
+_To do..._
+
+
 Updates
 -------
 
