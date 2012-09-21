@@ -1,11 +1,38 @@
-magento-responsive-theme
+Magento Responsive Theme
 ========================
 
 The GPMD responsive Magento theme is a simple fluid base theme which can be easily used as a starting point for your projects.
 
-It combines elements of [Mobile Boilerplate](https://github.com/h5bp/mobile-boilerplate/), [Gridless](http://thatcoolguy.github.com/gridless-boilerplate/) and [semantic.gs](http://semantic.gs/).
+It combines elements of [Mobile Boilerplate](https://github.com/h5bp/mobile-boilerplate/), [Gridless](http://thatcoolguy.github.com/gridless-boilerplate/) and [semantic.gs](http://semantic.gs/). It also includes the excellent [Font Awesome](http://fortawesome.github.com/Font-Awesome/) icon font.
 
-It also includes the excellent [Font Awesome](http://fortawesome.github.com/Font-Awesome/) icon font.
+
+Get it now!
+-----------
+
+Clone the repo, `git clone git@github.com:gpmd/magento-responsive-theme.git`, or [download the latest release](https://github.com/gpmd/magento-responsive-theme/zipball/master).
+
+
+Updates
+-------
+
+Keep up to date by following GPMD on Twitter, [@gpmd](https://twitter.com/gpmd).
+
+
+Bugs
+----
+
+Please create issues on GitHub: https://github.com/gpmd/magento-responsive-theme/issues
+
+
+Author
+------
+
+**Matt Bailey**
+
++ http://twitter.com/_mattbailey
++ http://dribbble.com/mattbailey
++ http://github.com/matt-bailey
++ http://www.mattbailey.co
 
 
 License
