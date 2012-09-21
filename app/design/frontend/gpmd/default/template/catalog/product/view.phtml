@@ -41,6 +41,14 @@
     <div class="product-essential">
     <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
 
+        <div class="product-col-left">
+
+            <div class="product-img-box">
+                <?php echo $this->getChildHtml('media') ?>
+            </div>
+
+        </div><!-- .product-col-left -->
+
         <div class="product-col-right">
 
             <div class="no-display">
@@ -108,14 +116,6 @@
             <?php endif;?>
 
         </div><!-- .product-col-right -->
-
-        <div class="product-col-left">
-
-            <div class="product-img-box">
-                <?php echo $this->getChildHtml('media') ?>
-            </div>
-
-        </div><!-- .product-col-left -->
 
     </form>
     <script type="text/javascript">
