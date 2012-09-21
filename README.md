@@ -35,6 +35,14 @@ Bugs
 Please create issues on GitHub: https://github.com/gpmd/magento-responsive-theme/issues
 
 
+Changelog
+---------
+
+### Beta v0.1.3
+
+- Created initial git repo.
+
+
 Author
 ------
 
