@@ -38,7 +38,7 @@ Please create issues on GitHub: https://github.com/gpmd/magento-responsive-theme
 Changelog
 ---------
 
-### Beta v0.1.3
+### v0.1.3 Beta
 
 - Created initial git repo.
 
