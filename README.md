@@ -3,8 +3,8 @@ magento-responsive-theme
 
 Simple responsive (fluid) Magento theme
 
-License - GPLv3
----------------
+License
+-------
 
 Copyright 2012 GPMD http://www.gpmd.co.uk/
 
