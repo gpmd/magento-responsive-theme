@@ -1,0 +1,230 @@
+/*
+ * GPMD Magento Responsive
+ * Version 1.0.0
+ * Free to use under the UNLICENSED license
+ * http://unlicense.org/
+ */
+/* #Imports
+================================================== */
+/*
+ * GPMD Magento Responsive
+ * Version 1.0.0
+ * Free to use under the UNLICENSED license
+ * http://unlicense.org/
+ */
+/* Table of Contents
+==================================================
+	#Typography
+	#Fonts
+	#Colours
+	#Styling */
+/* #Typography
+================================================== */
+/* Based on a 16px base font size this is equivalent to an 18 pixel baseline grid */
+/* #Fonts
+================================================== */
+/* FontAwesome */
+.font-awesome {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+}
+/* #Colours
+================================================== */
+/* #Styling
+================================================== */
+/* #Helpers
+================================================== */
+/* Accessible hiding */
+.accessible-hide {
+  /*position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;*/
+
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+
+  clip: rect(1px, 1px, 1px, 1px);
+}
+/* Hide from visual and speaking browsers */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+/* Cross browser inline-block: http://css-tricks.com/snippets/css/cross-browser-inline-block/ */
+.inline-block {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+/* The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* #Base structure
+================================================== */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 18px;
+  line-height: 1rem;
+  color: #000000;
+}
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+/* #Font stacks
+================================================== */
+.sans-serif {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.serif {
+  font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+}
+.monospace {
+  font-family: "Courier New", Courier, monospace;
+}
+/* #Headings/small
+================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 42px;
+  line-height: 2.3333333333333335rem;
+  margin: 0 0 0.5625em;
+}
+h2 {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 36px;
+  line-height: 2rem;
+  margin: 0 0 0.6428571428571429em;
+}
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 30px;
+  line-height: 1.6666666666666667rem;
+  margin: 0 0 0.75em;
+}
+h4 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 24px;
+  line-height: 1.3333333333333333rem;
+  margin: 0 0 0.9em;
+}
+h5 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.1111111111111112rem;
+  margin: 0 0 1.125em;
+}
+h6 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 18px;
+  line-height: 1rem;
+  margin: 0 0 1.125em;
+}
+small {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 0 0 1.125em;
+}
+/* #Text
+================================================== */
+p,
+ul,
+ol {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 18px;
+  line-height: 1rem;
+  margin: 0 0 1.125em;
+}
+/* Misc */
+.std {
+  line-height: 24px;
+  line-height: 1.3333333333333333rem;
+}
+/* #Preformatted text and code
+================================================== */
+pre,
+code,
+kbd,
+samp {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 18px;
+  line-height: 1rem;
+}
+/* #Forms
+================================================== */
+form,
+button,
+input,
+select,
+textarea,
+label {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 18px;
+  line-height: 1rem;
+}
+/* #Lists
+================================================== */
+dl dd {
+  margin: 0 0 1.125em;
+}
+dt {
+  margin-bottom: 0.5625em;
+}
+/* #Links
+================================================== */
+a,
+a:visited {
+  color: #0066cc;
+}
+a:hover {
+  color: #004c99;
+}
+::selection {
+  background: #ff0099;
+  color: #ffffff;
+}
+::-moz-selection {
+  background: #ff0099;
+  color: #ffffff;
+}

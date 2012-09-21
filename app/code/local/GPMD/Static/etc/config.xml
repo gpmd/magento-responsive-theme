@@ -1,0 +1,14 @@
+<config>
+	<modules>
+		<GPMD_Static>
+			<version>1.0.0</version>
+		</GPMD_Static>
+	</modules>
+	<global>
+		<blocks>
+			<static>
+				<class>GPMD_Static_Block</class>
+			</static>
+		</blocks>
+	</global>
+</config>

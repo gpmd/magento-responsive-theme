@@ -1,0 +1,21 @@
+<?php 
+$cssIncludes = $this->getCssIncludes ();
+
+foreach ($cssIncludes as $include) {
+	echo '<link rel="stylesheet" type="text/css" href="' . $include . '" media="all" />';
+}
+?>
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "<?php echo $this->getJQueryVersion(); ?>");</script>
+<?php if($this->getAddUi()): ?>
+<script type="text/javascript">google.load("jqueryui", "<?php echo $this->getUiVersion(); ?>");</script>
+<?php endif; ?>
+<?php if($this->getNoConflict()): ?>
+<script type="text/javascript">jQuery.noConflict();</script>
+<?php endif; ?>
+<?php 
+$jsIncludes = $this->getJsIncludes ();
+foreach ($jsIncludes as $include) {
+	echo '<script type="text/javascript" src="' . $include . '"></script>'."\n";
+}
+?>

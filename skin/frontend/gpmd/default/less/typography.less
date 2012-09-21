@@ -1,0 +1,167 @@
+/*
+ * GPMD Magento Responsive
+ * Version 1.0.0
+ * Free to use under the UNLICENSED license
+ * http://unlicense.org/
+ */
+
+/* #Imports
+================================================== */
+
+@import "style-mixins.less";
+
+
+/* #Base structure
+================================================== */
+
+body, button, input, select, textarea {
+	.sans-serif;
+	.font-size();
+	.line-height();
+	color: @black;
+}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+
+
+/* #Font stacks
+================================================== */
+
+.sans-serif { font-family : "Helvetica Neue", Arial, Helvetica, sans-serif; }
+.serif { font-family : Cambria, Georgia, Times, "Times New Roman", serif; }
+.monospace { font-family : "Courier New", Courier, monospace; }
+
+
+/* #Headings/small
+================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+h1 {
+	.font-size(36);
+	.line-height(42);
+	margin: 0 0 @baseline / 2;
+}
+
+h2 {
+	.font-size(30);
+	.line-height(36);
+	margin: 0 0 @baseline / 1.75;
+}
+
+h3 {
+	.font-size(24);
+	.line-height(30);
+	margin: 0 0 @baseline / 1.5;
+}
+
+h4 {
+	.font-size(18);
+	.line-height(24);
+	margin: 0 0 @baseline / 1.25;
+}
+
+h5 {
+	.font-size(16);
+	.line-height(20);
+	margin: 0 0 @baseline;
+}
+
+h6 {
+	.font-size(14);
+	.line-height(18);
+	margin: 0 0 @baseline;
+}
+
+small {
+	.font-size(14);
+	margin: 0 0 @baseline;
+}
+
+
+/* #Text
+================================================== */
+
+p, ul, ol {
+	.font-size();
+	.line-height();
+	margin: 0 0 @baseline;
+}
+
+/* Misc */
+
+.std {
+	.line-height(24);
+}
+
+
+/* #Preformatted text and code
+================================================== */
+
+pre, code, kbd, samp {
+	.monospace;
+	.font-size();
+	.line-height();
+}
+
+
+/* #Forms
+================================================== */
+
+form, button, input, select, textarea, label {
+	.font-size();
+	.line-height();
+}
+
+
+/* #Lists
+================================================== */
+
+dl dd {
+	margin: 0 0 @baseline;
+}
+
+dt {
+	margin-bottom: @baseline / 2;
+}
+
+
+/* #Links
+================================================== */
+
+a, a:visited {
+	color: @linkcol;
+}
+
+a:hover {
+	color: @linkcolhover;
+}
+
+::selection { 
+	background: @pink;
+	color: @white;
+}
+
+::-moz-selection { 
+	background: @pink;
+	color: @white;
+}

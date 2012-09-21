@@ -1,0 +1,1 @@
+jQuery.noConflict();jQuery(document).ready(function(e){e(".messages").delay(5e3).fadeOut()});

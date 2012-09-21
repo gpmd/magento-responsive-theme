@@ -1,0 +1,540 @@
+/*
+ * GPMD Magento Responsive
+ * Version 1.0.0
+ * Free to use under the UNLICENSED license
+ * http://unlicense.org/
+ */
+
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+
+@import "style-mixins.less";
+@import "layout-mixins.less";
+
+
+/* ==========================================================================
+   Grid variables
+   ========================================================================== */
+
+//@column-width: 60; /* Uncomment to override default value */
+//@gutter-width: 20; /* Uncomment to override default value */
+//@columns: 12; /* Uncomment to override default value */
+@total-width: 100%;
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+// apply a natural box layout model to all elements
+* { .box-sizing(border-box); }
+
+body {
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Header
+   ========================================================================== */
+
+.header-container {
+	.column(12);
+	margin-top: @baseline;
+	margin-bottom: @baseline / 2;
+}
+
+/* Navigation
+   ========================================================================== */
+
+.nav-container {
+	.column(12);
+	margin-top: @baseline / 2;
+	margin-bottom: @baseline / 2;
+}
+
+/* Main container
+   ========================================================================== */
+
+/* .main-container */
+.main-container {
+	.column(12);
+	margin-top: @baseline / 2;
+	margin-bottom: @baseline / 2;
+	.main {
+		.clearfix();
+		.col-main {
+			.clearfix();
+			position: relative;
+			margin-bottom: @baseline / 2;
+		}
+		.col-left {
+			.block {
+				&:first-child { margin-top: 0; }
+			}				
+		}
+		.col-right {
+			.block {
+				&:first-child { margin-top: 0; }
+			}
+		}
+	}
+}
+
+/* Columns
+   ========================================================================== */
+		
+/* .col1-layout */
+.col1-layout {
+	.main {
+		.col-main {
+			width: 100% !important;
+			margin-bottom: 0;
+		}
+	}
+}
+		
+/* .col2-left-layout and .col2-right-layout  */
+.col2-left-layout,
+.col2-right-layout {
+	.main {
+		.col-main { margin-bottom: @baseline; }
+	}
+}
+		
+/* .col3-layout */
+.col3-layout {
+	.main {
+		.col-wrapper {
+			.col-main { margin-bottom: @baseline; }
+			.col-left { margin-bottom: @baseline; }
+		}
+	}
+}
+
+/* Footer
+   ========================================================================== */
+
+.footer-container {
+	.column(12);
+	margin-top: @baseline / 2;
+	margin-bottom: @baseline;
+}
+
+/* One page checkout
+   ========================================================================== */
+
+/* .col2-set form columns */
+.opc,
+.account-login {
+	.col2-set {
+		.clearfix;
+		margin-bottom: @baseline;
+		&:last-child { margin-bottom: 0; }
+		.col-1 {
+			float: left;
+			width: 47.5%;
+		}
+		.col-2 {
+			float: right;
+			width: 47.5%;
+		}
+	}
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.left { float: left; }
+
+.right { float: right; }
+
+
+/**
+ * Styles below this point override the default 'mobile first' styles
+ */
+
+
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+// 480px
+@media only screen and (min-width: 479px) {
+
+	/* Columns
+	   ========================================================================== */
+
+	/* .co1-layout */
+	// #product_addtocart_form
+	.col1-layout {
+		.main {
+			/*#product_addtocart_form {
+				.row(12);
+				.product-shop {
+					.column(6,12);
+					float: right;
+					margin-bottom: @baseline;
+				}
+				.product-img-box {
+					.column(6,12);
+					float: left;
+					margin-bottom: @baseline;
+				}
+				.product-options {
+					.column(12,12);
+					margin-bottom: @baseline;
+				}
+				.product-options-bottom {
+					.column(12,12);
+				}
+			}*/
+		}
+	}
+	// .cart-collaterals
+	.col1-layout {
+		.main {
+			.cart-collaterals {
+				.row(12);
+				.col2-set { .column(6,12); }
+				.totals { .column(6,12); }
+			}
+		}
+	}
+
+	/* .col2-left-layout */
+	.col2-left-layout {
+		.main {
+			.row(12);
+			.breadcrumbs { .column(12,12); }
+			.col-main {
+				.column(6,12);
+				float: right;
+			}
+			.col-left {
+				.column(6,12);
+				float: left;
+			}
+		}
+	}
+
+	/* .col2-right-layout */
+	.col2-right-layout {
+		.main {
+			.row(12);
+			.breadcrumbs { .column(12,12); }
+			.col-main { .column(6,12); }
+			.col-right { .column(6,12); }
+		}
+	}
+
+	/* .col3-layout */
+	.col3-layout {
+		.main {
+			.col-wrapper { .column(6,12); }
+			.col-right { .column(6,12); }
+		}
+	}
+
+}
+
+// 600px
+@media only screen and (min-width: 599px) {
+
+	/* Navigation
+	   ========================================================================== */
+
+	.page {
+		// Switch menu layout for wider screens
+		display: table; 
+		border-collapse: collapse;
+		/* .nav-container */
+		.nav-container {
+			.row(12);
+			// Moves navigation to top of page
+			display: table-header-group;
+			float: none;
+			#nav { .column(12,12); }
+		}
+		/* Jump to menu */
+		a[href="#nav"] { .hidden; }
+	}
+
+	/* Columns
+	   ========================================================================== */
+
+	/* .co1-layout */
+	// #product_addtocart_form
+	.col1-layout {
+		.main {
+			//.row(12);
+			/*#product_addtocart_form {
+				.row(12);
+				.product-shop {
+					.column(5,12);
+					float: right;
+					margin-bottom: @baseline;
+				}
+				.product-img-box {
+					.column(7,12);
+					float: left;
+					margin-bottom: @baseline;
+				}
+			}*/
+			.product-essential {
+				.row(12);
+				.product-col-right {
+					.column(5,12);
+					float: right;
+				}
+				.product-col-left {
+					.column(7,12);
+					float: left;
+				}
+			}
+		}
+	}
+	// .col3-set
+	.col1-layout {
+		.main {
+			.col3-set {
+				.row (12);
+				.col-1 { .column(4,12); }
+				.col-2 { .column(4,12); }
+				.col-3 { .column(4,12); }
+			}
+		}
+	}
+
+}
+
+// 768px
+@media only screen and (min-width: 767px) {
+
+	/* Columns
+	   ========================================================================== */
+
+	/* .co1-layout */
+	// #product_addtocart_form
+	.col1-layout {
+		.main {
+			/*#product_addtocart_form {
+				.row(12);
+				.product-shop {
+					.column(4,12);
+					float: right;
+					margin-bottom: @baseline;
+				}
+				.product-img-box {
+					.column(8,12);
+					float: left;
+					margin-bottom: @baseline;
+				}
+			}*/
+		}
+	}
+	// .cart-collaterals
+	.col1-layout {
+		.main {
+			.cart-collaterals {
+				.row(12);
+				.col2-set {
+					.column(8,12);
+					.col-1 {
+						// Double nested columns have to be worked out manually
+						display: inline;
+						float: left;
+						// Width includes margin percentage to keep gutters even
+						width: 48.4375%;
+						margin: 0;
+					}
+					.col-2 {
+						// Double nested columns have to be worked out manually
+						display: inline;
+						float: right;
+						// Width includes margin percentage to keep gutters even
+						width: 48.4375%;
+						margin: 0;
+					}
+				}
+				.totals { .column(4,12); }
+			}
+		}
+	}
+
+	/* .col2-left-layout */
+	.col2-left-layout {
+		.main {
+			.row(12);
+			.col-main {
+				.column(8,12);
+				float: right;
+			}
+			.col-left {
+				.column(4,12);
+				float: left;
+			}
+		}
+	}
+
+	/* .col2-right-layout */
+	.col2-right-layout {
+		.main {
+			.row(12);
+			.col-main {
+				.column(8,12);
+			}
+			.col-right { .column(4,12); }
+		}
+	}
+	// #product_addtocart_form
+	.col2-right-layout {
+		.main {
+			#product_addtocart_form {
+				.row(8);
+				.product-shop {
+					.column(4,8);
+					float: left;
+				}
+				.product-img-box {
+					.column(4,8);
+					float: right;
+				}
+				#product-options {
+					.column(8,8);
+				}
+				.product-options-bottom {
+					.column(8,8);
+				}
+			}
+		}
+	}
+
+	/* .col3-layout */
+	.col3-layout {
+		.main {
+			.row(12);
+			.breadcrumbs { .column(12,12); }
+			.col-wrapper {
+				.column(9,12);
+				.col-main {
+					// Double nested columns have to be worked out manually
+					display: inline;
+					float: right;
+					// Width includes margin percentage to keep gutters even
+					width: 65.2777777777778%;
+					margin: 0;
+				}
+				.col-left {
+					// Double nested columns have to be worked out manually
+					display: inline;
+					float: left;
+					// Width includes margin percentage to keep gutters even
+					width: 31.9444444444444%;
+					margin: 0;
+				}
+			}
+			.col-right { .column(3,12); }
+		}
+	}
+	
+	/* .products-grid */
+	.products-grid {
+		.clearfix;
+		width: 104.16666666666667%;
+		margin: 0 -2.083333333333333%;
+		.item { .column(2,6); }
+	}
+
+}
+
+// 960px
+@media only screen and (min-width: 959px) {
+
+	/* Wrapper
+	   ========================================================================== */
+
+	.wrapper {
+		//.max-width(1440,5); /* Set a maximum page width of 1296px - 1440px with 5% margins */
+		.max-width(1024,3.125); /* Set a maximum page width of 960px - 1024px with 3.125% margins */
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	
+	/* Columns
+	   ========================================================================== */
+
+	/* .co1-layout */
+	// .cart
+	.col1-layout {
+		.main {
+			.cart {
+				.cart-collaterals {
+					.row(12);
+					.col2-set { .column(8,12); }
+					.totals { .column(4,12); }
+				}
+			}
+		}
+	}
+
+	/* .col2-left-layout */
+	.col2-left-layout {
+		.main {
+			.row(12);
+			.col-main {
+				.column(9,12);
+				float: right;
+			}
+			.col-left {
+				.column(3,12);
+				float: left;
+			}
+		}
+	}
+
+	/* .col2-right-layout */
+	.col2-right-layout {
+		.main {
+			.row(12);
+			.col-main {
+				.column(9,12);
+			}
+			.col-right { .column(3,12); }
+		}
+	}
+	// #product_addtocart_form
+	.col2-right-layout {
+		.main {
+			.row(12);
+			#product_addtocart_form {
+				.product-shop {
+					.column(3,8);
+					float: left;
+				}
+				.product-img-box {
+					.column(5,8);
+					float: right;
+				}
+			}
+		}
+	}
+
+}
+
+// 1382px
+@media only screen and (min-width: 1381px) {}
+
+// HD Ready TV 1219px
+@media only tv and (min-width: 1218px) {}
+
+// Full HD TV 1828px
+@media only tv and (min-width: 1827px) {}
+
+// 2x
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (min-device-pixel-ratio: 1.5) {}

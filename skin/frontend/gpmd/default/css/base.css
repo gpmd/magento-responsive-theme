@@ -1,0 +1,412 @@
+/*
+ * Gridless version 2.0
+ * Credit is left inline and big thanks to Nicolas Gallagher and Jonathan Neal
+ * Across this document we use safe CSS hacks: http://mathiasbynens.be/notes/safe-css-hacks
+ * Selectors beggining with an underscore (_selector: property) target only IE6
+ * Selectors begining with an asterisk (*selector: property) target only IE6 and IE7
+ * Modified for GPMD Magento Responsive
+ * Version 1.0.0
+ * Free to use under the UNLICENSED license
+ * http://unlicense.org/
+ */
+/* #HTML5 display definitions
+================================================== */
+/* NOTE - Our theme is currently not HTML5, but we're leaving these styles in for future compatibility */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+dialog {
+  display: block;
+}
+/* Corrects inline-block not defined in IE6/7/8 and FF3 */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+/* Ensures content is hidden from all presentations, including screenreaders */
+[hidden] {
+  display: none;
+  visibility: hidden;
+}
+/* #Base structure
+================================================== */
+/* Add and/or remove tags as your baseline grid needs */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+hr,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+menu,
+img,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1;
+  font-family: inherit;
+}
+/*
+ * The body will work like a 'div#wrapper' (for this to work, the 'body' needs to have a set width)
+ * To add a background to the PAGE, set it in the 'html' element
+ * To add a background to the WRAPPER, set it in the 'body' element
+ */
+html {
+  height: 100%;
+  overflow-y: scroll;
+  /* Force a scrollbar in non-IE */
+
+  -webkit-text-size-adjust: 100%;
+  /* Prevent iOS text size adjust on orientation change without disabling user zoom */
+
+  -ms-text-size-adjust: 100%;
+}
+body {
+  font-size: 100%;
+  margin: 0;
+  min-height: 100%;
+}
+/* #Preformatted text and code
+================================================== */
+/* Allows line wrapping of 'pre' */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/* #Tables
+================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  text-align: left;
+}
+tr,
+th,
+td {
+  padding: 0;
+}
+/* #Forms
+================================================== */
+form {
+  margin: 0;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+label {
+  display: block;
+}
+legend {
+  border: 0;
+  *margin-left: -7px;
+}
+button,
+input,
+select,
+textarea {
+  line-height: normal !important;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-appearance: button;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  margin: 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/* Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7 */
+table button,
+table input {
+  *overflow: auto;
+}
+/* #Quotes
+================================================== */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+blockquote,
+q,
+cite {
+  font-style: italic;
+}
+blockquote {
+  padding-left: 1.625em;
+  padding-left: 1.625rem;
+  border-left: 1px solid #ddd;
+}
+blockquote > p {
+  padding: 0;
+}
+/* #Lists
+================================================== */
+ul,
+ol {
+  list-style-position: inside;
+  padding: 0;
+}
+li ul,
+li ol {
+  margin: 0 1.625em;
+  margin: 0 1.625rem;
+}
+dl dd {
+  margin-left: 1.625em;
+  margin-left: 1.625rem;
+}
+/* #Links
+================================================== */
+a,
+a:visited {
+  text-decoration: none;
+  color: #0066cc;
+}
+a:hover {
+  color: #003399;
+  border-bottom: none;
+}
+a:focus {
+  outline: thin dotted;
+}
+/* Better CSS outline suppression: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover,
+a:active {
+  outline: none;
+}
+a:link {
+  -webkit-tap-highlight-color: rgba(0, 102, 204, 0.15);
+  /* this highlights links on Iphones / iPads */
+
+}
+::selection {
+  background: #ff0035;
+  color: #ffffff;
+  text-shadow: none;
+}
+::-moz-selection {
+  background: #ff0035;
+  color: #ffffff;
+  text-shadow: none;
+}
+/* #Figures
+================================================== */
+figure {
+  margin: 0;
+}
+/* #Embedded content
+================================================== */
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+  /* IE6 doesn't support max-width, so we just use width. If the image is larger than the container, just uncomment this. If it is smaller than the container, uncomment and change the 100% value to an absolute one */
+
+  /*_width: 100%;*/
+
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  /* Improve IE's resizing of images: css-tricks.com/ie-fix-bicubic-scaling-for-images */
+
+}
+/* Corrects overflow displayed oddly in IE9 */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* #Abbreviations
+================================================== */
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+/* #Marked/inserted/deleted text
+================================================== */
+mark {
+  background: #ff0;
+}
+ins {
+  text-decoration: none;
+  background: #ff9;
+}
+del {
+  text-decoration: line-through;
+}
+/* #Others
+================================================== */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+strong,
+b,
+dt {
+  font-weight: bold;
+}
+em,
+i,
+dfn {
+  font-style: italic;
+}
+var,
+address {
+  font-style: normal;
+}
+/* Position 'sub' and 'sup' without affecting line-height: gist.github.com/413930 */
+sub,
+sup {
+  font-size: 0.625em;
+  font-size: 0.625rem;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+  top: -0.5rem;
+}
+sub {
+  bottom: -0.25em;
+  bottom: -0.25rem;
+}
+/* #Helper classes
+================================================== */
+/*
+	* Micro clearfix hack, more semantically titled with 'group'
+	* Source: nicolasgallagher.com/micro-clearfix-hack/
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  *zoom: 1;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
