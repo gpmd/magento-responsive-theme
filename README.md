@@ -35,6 +35,10 @@ Please create issues on GitHub: https://github.com/gpmd/magento-responsive-theme
 Author
 ------
 
+**GPMD**
+
++ http://gpmd.co.uk
+
 **Matt Bailey**
 
 + http://twitter.com/_mattbailey
