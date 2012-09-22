@@ -3,7 +3,7 @@ Magento Responsive Theme
 
 The GPMD responsive Magento theme is a simple fluid base theme which can be easily used as a starting point for your projects.
 
-**The styling has been kept purposely simple so it's easy to override. It's based on the base/default theme (with the demo store content), and has had only a few template overrides to make the markup suitable for a responsive site.**
+**The styling has been kept purposely simple so it's easy to override. It's based on the base/default theme (with the demo store content), and has only a few template overrides to make the markup suitable for a responsive site.**
 
 It combines elements from [Mobile Boilerplate](https://github.com/h5bp/mobile-boilerplate/), [Gridless](http://thatcoolguy.github.com/gridless-boilerplate/) and [semantic.gs](https://github.com/twigkit/semantic.gs/). It also includes the excellent [Font Awesome](http://fortawesome.github.com/Font-Awesome/) icon font.
 
