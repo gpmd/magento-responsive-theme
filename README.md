@@ -62,6 +62,7 @@ Changelog
 To do
 -----
 
+- Add instructions on overriding the theme
 - Modularise the less/css more effectively (smacss approach)
 - Better less/css commenting
 - Move less variables out of style-mixins.less into their own file
