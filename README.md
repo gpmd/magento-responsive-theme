@@ -70,6 +70,7 @@ To do
 - More thorough cross browser/platform testing
 - Remove unnecessary files/folders (mainly images)
 - Remove unnecessary css/js
+- Change namespace
 
 
 Authors
