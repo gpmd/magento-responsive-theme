@@ -28,7 +28,15 @@ We don't yet have a live demo available, but in the meantime you can [view some 
 Instructions
 ------------
 
-_To do..._
+Either...
+
+- Download the theme as a Magento package and install through the Magento Connect Manager
+
+or...
+
+- Download the repository and merge the files/folders into your own site manually:
+-- In **System** > **Configuration** (General / Design tab), set **Package** to `gpmd`
+-- Then set **Themes** - **Templates**, **Skin (Images/CSS)**, **Layout** and **Default** to `default`
 
 
 Updates
@@ -54,7 +62,14 @@ Changelog
 To do
 -----
 
-_To do..._
+- Modularise the less/css more effectively (smacss approach)
+- Better less/css commenting
+- Move less variables out of style-mixins.less into their own file
+- Reduce css specificity
+- Replace Gridless with a more simple reset
+- More thorough cross browser/platform testing
+- Remove unnecessary files/folders (mainly images)
+- Remove unnecessary css/js
 
 
 Authors
