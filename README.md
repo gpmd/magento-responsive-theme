@@ -30,13 +30,13 @@ Instructions
 
 Either...
 
-- Download the theme as a Magento package and install through the Magento Connect Manager
+- [Download the theme as a Magento package](https://github.com/gpmd/magento-responsive-theme/blob/master/var/connect/GPMD_Responsive_Theme-0.1.3.tgz) and install through the Magento Connect Manager
 
-or...
+Or...
 
-- Download the repository and merge the files/folders into your own site manually:
--- In **System** > **Configuration** (General / Design tab), set **Package** to `gpmd`
--- Then set **Themes** - **Templates**, **Skin (Images/CSS)**, **Layout** and **Default** to `default`
+1. [Download the repository](https://github.com/gpmd/magento-responsive-theme/zipball/master) and merge the files/folders into your own site manually:
+2. In **System** > **Configuration** (General / Design tab), set **Package** to `gpmd`
+3. Then set **Themes** - **Templates**, **Skin (Images/CSS)**, **Layout** and **Default** to `default`
 
 
 Updates
