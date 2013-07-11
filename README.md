@@ -1,3 +1,5 @@
+*Please note: This theme is no longer under active development*
+
 Magento Responsive Theme
 ========================
 
