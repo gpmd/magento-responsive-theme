@@ -1,0 +1,4 @@
+app/code/local/GPMD app/code/local/GPMD
+app/design/frontend/gpmd app/design/frontend/gpmd
+app/etc/modules/* app/etc/modules/
+skin/frontend/gpmd  skin/frontend/gpmd

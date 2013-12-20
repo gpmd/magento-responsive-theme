@@ -1,6 +1,7 @@
 *
 !*/
 !.gitignore
+!modman
 !README.md
 !var/connect/GPMD_Responsive_Theme-0.1.3.tgz
 !app/code/local/GPMD/*
