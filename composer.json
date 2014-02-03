@@ -1,0 +1,23 @@
+{
+    "name": "gpmd/magento-responsive-theme",
+    "type": "magento-module",
+    "license":"GPL v2.0",
+    "description":"Simple free responsive (fluid) Magento theme",
+    "authors":[
+        {
+            "name":"GMPD",
+            "email":"hello@gpmd.co.uk"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra": {
+        "map": [
+            ["app/code/local/GPMD/Static", "app/code/local/GPMD/Static"],
+            ["app/design/frontend/gpmd/default", "app/design/frontend/gpmd/default"],
+            ["app/etc/modules/GPMD_Static.xml", "app/etc/modules/GPMD_Static.xml"],
+            ["skin/frontend/gpmd/default", "skin/frontend/gpmd/default"]
+        ]
+    }
+}
