@@ -27,6 +27,7 @@
     <h2><?php echo $this->__('Write Your Own Review') ?></h2>
     <?php if ($this->getAllowWriteReviewFlag()): ?>
     <form action="<?php echo $this->getAction() ?>" method="post" id="review-form">
+        <?php echo $this->getBlockHtml('formkey'); ?>
         <!-- Messes with responsive layouts -->
         <!--<fieldset>-->
             <?php echo $this->getChildHtml('form_fields_before')?>

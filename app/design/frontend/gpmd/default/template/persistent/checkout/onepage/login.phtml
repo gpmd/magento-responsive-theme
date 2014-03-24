@@ -63,6 +63,7 @@
         <h3><?php echo $this->__('Login') ?></h3>
         <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
         <form id="login-form" action="<?php echo $this->getPostAction() ?>" method="post">
+        <?php echo $this->getBlockHtml('formkey'); // added by edg 3/18/2014 ?>
         <!-- fieldset tag removed because it seems to cause problems with responsive layouts -->
         <!--<fieldset>-->
             <h4><?php echo $this->__('Already registered?') ?></h4>
